@@ -10,11 +10,11 @@ RAZORPAY_KEY_ID='rzp_test_YxFqNpnySKudsR'
 RAZORPAY_KEY_SECRET='Tjpe9IjAW2WBuOvlCUQ9xNUN'
 client=razorpay.Client(auth=(RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET))
 from itemid import itemidotp
-mydb=mysql.connector.connect(host='localhost',
-user='root',
-password='admin',
-db='ecomerce'
-)
+# mydb=mysql.connector.connect(host='localhost',
+# user='root',
+# password='admin',
+# db='ecomerce'
+# )
 app=Flask(__name__)
 app.secret_key='jnvnkdfjvndjs'
 @app.route('/')
